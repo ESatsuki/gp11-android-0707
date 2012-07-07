@@ -82,13 +82,9 @@ public class QCARBehaviour : MonoBehaviour
     [SerializeField]
     private bool SynchronousVideo = false;
 
-    [SerializeField]
-    [HideInInspector]
-    private WorldCenterMode mWorldCenterMode = WorldCenterMode.AUTO;
+    public WorldCenterMode mWorldCenterMode = WorldCenterMode.AUTO;
 
-    [SerializeField]
-    [HideInInspector]
-    private TrackableBehaviour mWorldCenter = null;
+    public TrackableBehaviour mWorldCenter = null;
 
     private List<ITrackerEventHandler> mTrackerEventHandlers =
                     new List<ITrackerEventHandler>();
